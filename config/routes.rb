@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   # API Routes
   # -----------
 
+get 'test/new'
+
+resources :test
+root 'test#new'
+
+
   namespace :api do
     namespace :v1 do
       get 'info/server' => 'info#server'
