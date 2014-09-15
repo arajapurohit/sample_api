@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  school_id: MyString
+  school_id: 1
 
 two:
   name: MyString
-  school_id: MyString
+  school_id: 1
