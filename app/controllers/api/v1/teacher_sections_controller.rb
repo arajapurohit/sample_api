@@ -6,10 +6,10 @@ module Api
 
       def index
         @proc_code = Proc.new do
-          @school = SchoolSection.first
+          @school = SchoolSection.find(params[:id])
           current_page = 1
           per_page = 10
-          @data = TeacherSection.where("school_id = ?", @school.id).order("name asc").page(current_page).per(per_page)
+          @data = TeacherSection.where("school_id = ?", @school.id)
           @success = true
           @errors = {}
         end
