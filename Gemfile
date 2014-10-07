@@ -23,6 +23,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 # Database - Postgres Adapter
 gem 'pg'
+gem 'rails_12factor'
 # Pagination
 gem "kaminari"
 # State Machine
