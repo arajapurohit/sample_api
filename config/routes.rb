@@ -23,7 +23,7 @@ root 'test#new'
       get 'teacher_sections' => 'teacher_sections#index'
       get 'school_sections/:id' => 'school_sections#show'
       get 'school_sections/:id/teachers' => 'teacher_sections#index'
-
+      get 'sign_in' => 'sessions#create'
 
     end
   end
